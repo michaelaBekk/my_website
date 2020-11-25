@@ -41,6 +41,13 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelaBekk/my_website.git"
+  },
   "author": "Michaela Bekkerman",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelaBekk/my_website/issues"
+  }
 }

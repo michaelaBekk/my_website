@@ -10,7 +10,7 @@ function Resume() {
     return (
         <div>
             <NavMenu />
-            <div className="container-fluid mx-auto resume-page" style={{width: 2000 + 'px'}}>
+            <div className="container-fluid mx-auto resume-page" style={{width: 850 + 'px'}}>
                 <h1 className="resume-title">My Resume</h1>
                 <img className="resume-image" src="../Images/resume.jpg" alt="resume" />
             </div>

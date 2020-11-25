@@ -1,0 +1,355 @@
+/* Portfolio */
+
+.darken-background {
+    background:rgba(0,0,0, .8);
+    position:absolute;
+    width:110%;
+    height:130%;
+    margin-top:-100px;
+    z-index:1;
+    display:none;
+}
+
+.portfolio-title {
+    font-size:100px;
+    margin-left:430px;
+    white-space: nowrap;
+    box-shadow: -2px 2px 2px black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left:80px;
+    padding-bottom:20px;
+    margin-top:100px;
+    color:white;
+}
+
+.projects-container {
+    margin-left:200px;
+    margin-top:150px;
+    white-space: nowrap;
+}
+
+.portfolio-image {
+    width:480px;
+    height:280px;
+    margin-right:350px;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.3);
+}
+
+
+.vid-option-btn,
+.site-option-btn {
+    margin-top:50px;
+    white-space: nowrap;
+    height: 50px;
+    font-size: 18px;
+    background: #e2c4c4;
+    border:2px solid white;
+    color: #f35656;
+    padding:10px;
+    margin-right:20px;
+    box-shadow: inset 5px 5px 20px 5px #ff8080;
+    cursor:pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+.vid-option-btn:hover {
+    background:#faf9f9;
+}
+
+.vid-option-btn:active {
+    background:#f3c4c4;
+}
+
+.site-option-btn {
+    background: #ff8080;
+    color:white; 
+    border: 2px solid white;
+}
+
+.site-option-btn:hover {
+    background: #ec9999;
+}
+
+.site-option-btn:active {
+    background: #b86868;
+}
+
+.tools-container {
+    display:flex;
+    margin-left:300px;
+    margin-top:30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tools-container p {
+   font-size:20px;
+   white-space: nowrap;
+   font-weight: bolder;
+   color:white;
+}
+
+.tools-container ul {
+    margin-right:600px;
+}
+
+.tools-container ul li {
+    white-space: nowrap;
+    font-size:20px;
+    color:white;
+    list-style-type: square;
+}
+
+.quotes-video-container,
+.new-york-video-container,
+.art-video-container {
+    display: none;
+}
+
+.close-window {
+    position:absolute;
+    color:white;
+    cursor:pointer;
+    transform: scale(1.3);
+    top:160px;
+    right:500px;
+    z-index:3;
+    text-shadow: 4px 4px 2px black;
+}
+
+video {
+    transform: scale(.7);
+    position:absolute;
+    top:40px;
+    left:350px;
+    z-index:2;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/* Mobile Design */
+
+@media(min-width: 1701px) and (max-width: 2885px) {
+    .close-window {
+        top:160px;
+        left:1650px;
+    }
+
+    .darken-background {
+        width:275%;
+        height:5000px;
+    }
+
+    .close-window {
+        top:140px;
+        left:2000px;
+        transform: scale(2);
+    }
+}
+
+
+@media(min-width:651px) and (max-width:1700px) {
+ 
+    .portfolio-title {
+        font-size:130px;
+        margin-top:100px;
+        margin-left:50px;
+        width:400px;
+    }
+
+    .projects-container {
+        margin-left:100px;
+        margin-top:-100px;
+        width:500px;
+        white-space: normal;
+    }
+    
+    .portfolio-image {
+        transform: scale(1.3);
+        margin-top:320px;
+    }
+
+    #btnContainer {
+        flex-direction: column !important;
+        margin-top:-1550px;
+        margin-left:720px;
+    }
+
+    .vid-option-btn,
+    .site-option-btn {
+        margin-bottom:500px;
+        margin-right:120px;
+        transform: scale(1.7);
+    }
+
+    .tools-container {
+        flex-direction: column;
+        margin-top:-1600px;
+        margin-left:800px;
+    }
+
+    .tools-container ul {
+        margin-bottom:320px;
+        font-size:30px;
+    }
+
+    .tools-container p,
+    .tools-container ul li {
+        font-size:30px;
+    }
+
+    .darken-background {
+        width:275%;
+        height:5000px;
+    }
+
+    .close-window {
+        top:140px;
+        left:2000px;
+        transform: scale(3);
+    }
+
+}
+
+
+@media(min-width:1001px) and (max-width: 1200px) {
+    .close-window {
+        transform: scale(4);
+        top:290px;
+        left:2560px;
+    }
+
+    video {
+        transform: scale(1.2);
+        top:500px;
+        left:420px;
+    }
+}
+
+@media(min-width:651px) and (max-width: 1000px) {
+    .close-window {
+        transform: scale(3);
+        top:290px;
+        left:1880px;
+    }
+
+    .darken-background {
+        width:5000px;
+    }
+
+    video {
+        transform: scaleX(.8);
+        top:350px;
+        left:120px;
+    }
+}
+
+@media(max-width:650px) {
+    .portfolio-page {
+        width: 300px !important;
+        white-space: normal;
+    }
+
+    
+    .portfolio-title {
+        margin-top:280px;
+        font-size:70px;
+        margin-left:100px;
+        width:400px;
+    }
+
+    .projects-container {
+        margin-left:50px;
+        margin-top: 180px;
+        white-space: normal;
+    }
+    
+    .portfolio-image {
+        transform: scale(.9);
+        margin-bottom:550px;
+    }
+    
+    .portfolio-image:hover {
+        transform: none;
+    }
+
+    #btnContainer {
+        flex-direction: column !important;
+        margin-top: -2200px;
+        margin-left:150px;
+    }
+
+    .vid-option-btn,
+    .site-option-btn {
+        border:1px solid white;
+        margin-bottom:720px;
+        transform:scale(1.2);
+        margin-right:50px;
+    }
+
+    .tools-container {
+        flex-direction: column;
+        margin-top:-2300px;
+        margin-left:230px;
+    }
+
+    .tools-container ul {
+        margin-bottom:570px;
+    }
+
+    .tools-container p,
+    .tools-container ul li {
+        font-size:25px;
+    }
+
+    .darken-background {
+        width:210%;
+        height:5000px;
+        margin-top:-280px;
+    }
+
+    .close-window {
+        transform: scale(1.5);
+        left:640px;
+    }
+
+    video {
+        transform: scale(.3);
+        left:-620px;
+    }
+
+    #quotesClose {
+        top:520px;
+    }
+
+    .quotes-video {
+        top:220px;
+    }
+
+    #newYorkClose {
+        top:1200px;
+    }
+
+    .new-york-video {
+        top:850px;
+    }
+
+    #artClose {
+        top:1950px;
+    }
+
+    .art-video {
+        top:1600px;
+    }
+}
+
+@media(max-width:450px) {
+    .darken-background {
+        width:270%;
+        height:5000px;
+    }
+
+}

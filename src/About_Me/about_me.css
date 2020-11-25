@@ -1,0 +1,200 @@
+/* About Me */
+.about-me-page {
+     background: linear-gradient(#ffe6f3, #91dbf0);
+     width:100%;
+     height:2000px;
+}  
+
+.about-me-container {
+     width:600px;
+}
+
+.about-me-title {
+     font-size:80px;
+     padding-top:150px;
+     font-family:'Times New Roman', Times, serif;
+     font-style: italic;
+     color:#004d99;
+     white-space: nowrap;
+}
+
+.me {
+     width:200px;
+     border-radius: 50%;
+     margin-top:20px;
+     margin-left: 60px;
+     animation-name: fadeIn;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-in;
+     animation-duration: 3s;
+     animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.introduction {
+     text-align: center;
+     margin-top:60px;
+     margin-left:-200px;
+     font-family:'Times New Roman', Times, serif;
+     font-size:25px;
+     color:black;
+     width:800px;
+     line-height: 40px;
+}
+
+.profession {
+     font-weight:bold;
+     color:black;
+}
+
+.skills-container {
+     margin-left:-60px;
+     margin-top:40px;
+     display: flex;
+     width: 600px;
+}
+
+.skills-container p {
+     color:#004d99;
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+     font-size:30px;
+}
+
+.skill {
+     display:inline-block;
+     list-style-type: none;
+     margin:12px;
+     padding:6px;
+     border:2px dotted #004d99;
+     border-radius:10px;
+     color:#004d99;
+     font-family:monospace;
+     font-size:16px;
+     font-weight: bold;
+}
+            
+.resume-link,
+.portfolio-link {
+     font-size:22px;
+     color:#004d99;
+}
+
+.resume-link:hover,
+.portfolio-link:hover {
+     color:#427bb4;
+}
+
+.resume-link:active,
+.portfolio-link:active {
+     color:#4e6b88;
+}
+
+.contact-container {
+     margin-top: 50px;
+     margin-left:100px;
+     white-space:nowrap;
+     font-family: 'Times New Roman', Times, serif;
+     color:rgba(0,0,0, .7);
+}
+
+.email-icon {
+     transform:scale(1.8);
+     color: #0073e6;
+     margin-left:-70px;
+}
+
+.email-icon:hover {
+     transform:scale(3);
+     cursor: pointer;
+}
+
+.contact-title {
+     font-size:30px;
+}
+
+.contact-container p {
+     font-size:18px;
+     font-weight: bolder;
+}
+
+.email {
+     margin-top:-30px;
+}
+
+
+/* Mobile Design */
+@media(max-width:1200px) {
+     .about-me-page {
+          background:none;
+     }
+     
+     .about-me-title {
+          margin-left:70px;
+          font-size:150px;
+          padding-top:300px;
+     }
+
+     .me {
+          margin-left:270px;
+          margin-top:60px;
+     }
+
+     .contact-container {
+          margin-left:230px;
+     }
+     
+     .introduction {
+          margin-left:0px;
+          line-height: 70px;
+          font-size:45px;
+          width:730px
+     }
+
+     .contact-title {
+          font-size:60px;
+     }
+     
+     .contact-container p {
+          font-size:30px;
+     }
+
+     .email-icon {
+          transform:scale(3);
+     }
+     
+     .email-icon:hover {
+          transform:scale(3.5);
+     }
+          
+     .skills-container {
+          margin-left:120px;
+     }
+
+     .skills-container p {
+          font-size:50px;
+     }
+
+     .skill {
+          font-size:35px;
+     }
+               
+     .resume-link,
+     .portfolio-link {
+          font-size:45px;
+}
+ 
+}
+
+@media(max-width:650px) {
+     .about-me-container {
+          margin-top:300px;
+     }
+}
+          
+          
+ 

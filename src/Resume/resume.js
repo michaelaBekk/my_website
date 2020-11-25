@@ -12,8 +12,7 @@ function Resume() {
             <NavMenu />
             <div className="container-fluid mx-auto resume-page" style={{width: 2000 + 'px'}}>
                 <h1 className="resume-title">My Resume</h1>
-                <img className="resume-image" src="../Images/resume_page_1.jpg" alt="resume: page 1" />
-                <img className="resume-image" src="../Images/resume_page_2.jpg" alt="resume: page 2" />
+                <img className="resume-image" src="../Images/resume.jpg" alt="resume" />
             </div>
         </div>
 
